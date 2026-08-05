@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-950 text-slate-200 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .cyber-grid {
+    background-image:
+      linear-gradient(rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .text-glow-green {
+    text-shadow: 0 0 12px rgba(34, 227, 120, 0.55);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 12px rgba(34, 211, 238, 0.55);
+  }
+  .card-surface {
+    @apply rounded-2xl border border-white/5 bg-ink-850/80 backdrop-blur-sm shadow-card;
+  }
+}
